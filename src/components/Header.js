@@ -1,8 +1,11 @@
 import "../styles/Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { ArrowDropDown } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import TuneIcon from "@mui/icons-material/Tune";
+import AppsIcon from "@mui/icons-material/Apps";
+import SettingsIcon from "@mui/icons-material/Settings";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import { Avatar, IconButton } from "@mui/material";
 
 const Header = () => {
   return (
@@ -18,11 +21,27 @@ const Header = () => {
         />
       </div>
       <div className="header_middle">
-        <SearchIcon></SearchIcon>
+        <IconButton>
+          <SearchIcon></SearchIcon>
+        </IconButton>
         <input placeholder="Search mail" type="text" />
-        <ArrowDropDown className="header_inputCaret"></ArrowDropDown>
+        <IconButton>
+          <TuneIcon className="header_inputCaret"></TuneIcon>
+        </IconButton>
       </div>
-      <div className="header_right"></div>
+      <div className="header_right">
+        <IconButton>
+          <HelpOutlineIcon></HelpOutlineIcon>
+        </IconButton>
+        <IconButton>
+          <SettingsIcon></SettingsIcon>
+        </IconButton>
+        <IconButton>
+          <AppsIcon></AppsIcon>
+        </IconButton>
+
+        <Avatar></Avatar>
+      </div>
     </div>
   );
 };
