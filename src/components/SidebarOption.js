@@ -1,7 +1,7 @@
 import "../styles/SidebarOption.css";
-const SidebarOption = ({ Icon, title, number }) => {
+const SidebarOption = ({ Icon, title, number, selected }) => {
   return (
-    <div className="sidebarOption">
+    <div className={`sidebarOption ${selected && `sidebarOption--active`}`}>
       {Icon}
       <h3>{title}</h3>
       <p>{number}</p>
