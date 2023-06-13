@@ -34,6 +34,7 @@
 .sidebarOption>p{
     display: none;
     font-weight: 300;
+    font-size: 14px;
 }
 
 .sidebarOption--active>p{
