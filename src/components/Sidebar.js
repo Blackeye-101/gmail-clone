@@ -11,13 +11,17 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PersonIcon from "@mui/icons-material/Person";
 import DuoIcon from "@mui/icons-material/Duo";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { useDispatch } from "react-redux";
+import { toggleSendMessage } from "../features/mailSlice";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
   return (
     <div className="sidebar">
       <Button
         startIcon={<CreateIcon fontSize="large"></CreateIcon>}
         className="sidebar_compose"
+        onClick={() => dispatch(toggleSendMessage())}
       >
         Compose
       </Button>
