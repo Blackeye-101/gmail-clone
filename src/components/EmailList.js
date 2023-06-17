@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import "../styles/EmailList.css";
 import Section from "./Section";
 import EmailRow from "./EmailRow";
@@ -12,8 +14,21 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import InboxIcon from "@mui/icons-material/Inbox";
 import PeopleIcon from "@mui/icons-material/People";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import { db } from "../firebase";
 
 const EmailList = () => {
+  const [emails, setEmails] = useState([]);
+
+  useEffect(() => {
+    db.collection("emails")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setEmails(
+          snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+        )
+      );
+  }, []);
+
   return (
     <div className="emailList">
       <div className="emailList__settings">
@@ -65,7 +80,19 @@ const EmailList = () => {
       </div>
 
       <div className="emailList__list">
-        <EmailRow
+        {emails.map(({ id, data: { to, subject, message, timestamp } }) => {
+          return (
+            <EmailRow
+              id={id}
+              key={id}
+              title={to}
+              subject={subject}
+              description={message}
+              time={new Date(timestamp?.seconds * 1000).toUTCString()}
+            ></EmailRow>
+          );
+        })}
+        {/* <EmailRow
           title="Test"
           subject="Testing"
           description="this is a test"
@@ -76,7 +103,7 @@ const EmailList = () => {
           subject="Testing"
           description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
           time="12am"
-        ></EmailRow>
+        ></EmailRow> */}
       </div>
     </div>
   );
