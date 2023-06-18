@@ -92,7 +92,7 @@ const EmailList = () => {
             ></EmailRow>
           );
         })}
-        {/* <EmailRow
+        <EmailRow
           title="Test"
           subject="Testing"
           description="this is a test"
@@ -103,7 +103,121 @@ const EmailList = () => {
           subject="Testing"
           description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
           time="12am"
-        ></EmailRow> */}
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test,this is a test,this is a test,this is a test,this is a test,this is a test"
+          time="12am"
+        ></EmailRow>
+        <EmailRow
+          title="Test"
+          subject="Testing"
+          description="this is a test"
+          time="12am"
+        ></EmailRow>
       </div>
     </div>
   );
